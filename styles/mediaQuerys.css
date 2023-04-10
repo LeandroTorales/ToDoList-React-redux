@@ -1,0 +1,39 @@
+@media (max-width:768px) {
+
+
+    .wrapper--toDo {
+        padding: 5px 5px;
+        gap: 20px;
+        width: 90%;
+        height: 90%;
+    }
+
+    .text-task {
+        font-size: 11px;
+    }
+
+    .buttons--modificateTask {
+        margin-left: 5px;
+    }
+
+    .button--editTask {
+        padding-left: 5px;
+        font-size: 12px;
+        padding-right: 5px;
+    }
+
+    .button--deleteTask {
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 19px;
+    }
+
+    #form>input {
+
+        font-size: 12px;
+    }
+
+    .add--task {
+        font-size: 12px;
+    }
+}
