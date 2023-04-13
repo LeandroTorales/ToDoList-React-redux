@@ -19,5 +19,3 @@ const countTotalTasksSlice = createSlice({
 
 export const { countTotalTasks } = countTotalTasksSlice.actions;
 export default countTotalTasksSlice.reducer;
-
-

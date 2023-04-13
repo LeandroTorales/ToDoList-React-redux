@@ -3,5 +3,8 @@
     "@reduxjs/toolkit": "^1.9.3",
     "redux": "^4.2.1",
     "redux-devtools-extension": "^2.13.9"
+  },
+  "devDependencies": {
+    "redux-devtools": "^3.7.0"
   }
 }

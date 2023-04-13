@@ -1,10 +1,3 @@
-import { useDispatch, useSelector } from "react-redux";
-const dispatch = useDispatch();
-console.log("wrapperTaskss:", wrapperTaskss);
-console.log("taskTotal:", taskTotal);
-const { taskTotal } = useSelector((state) => state.countTotalTasksSlice);
-const { wrapperTaskss } = useSelector((state) => state.generateTasksSlice);
-
 const input = document.querySelector("#input--putTask");
 const addTask = document.querySelector(".add--task");
 const wrapperTasks = document.querySelector(".wrapper--tasks");
@@ -12,10 +5,8 @@ const textTotalTasks = document.querySelector(".total--tasks");
 const btnCleanTasks = document.querySelector(".clean--tasks");
 
 let tasks = JSON.parse(localStorage.getItem("tasks")) || [];
-console.log("tasks:", tasks);
 
 let numbers = JSON.parse(localStorage.getItem("numbers")) || [];
-console.log("numbers:", numbers);
 
 const saveToLocalStorage = (key, valor) => {
   localStorage.setItem(key, JSON.stringify(valor));
