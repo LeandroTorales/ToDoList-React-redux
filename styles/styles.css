@@ -6,30 +6,34 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     scrollbar-width: auto;
-    scrollbar-color: #000000 #ffffff;
+    scrollbar-color: #ffffff #ba2c2c;
 }
 
 *::-webkit-scrollbar {
-    width: 11px;
+    width: 10px;
 }
 
 *::-webkit-scrollbar-track {
-    background: #ffffff;
+    background: #ffffff00;
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: #000000;
-    border-radius: 10px;
-    border: 4px solid #ffffff;
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: 30px solid #00000000;
 }
 
 
-
-
+h2 {
+    color: white;
+}
 
 .container--main__toDo {
-    background: rgb(150, 255, 189);
-    background: linear-gradient(45deg, rgba(150, 255, 189, 1) 0%, rgba(74, 210, 97, 1) 100%);
+    background: rgb(24, 28, 70);
+    background: -moz-linear-gradient(0deg, rgba(24, 28, 70, 1) 5%, rgba(119, 119, 119, 1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(24, 28, 70, 1) 5%, rgba(119, 119, 119, 1) 100%);
+    background: linear-gradient(0deg, rgba(24, 28, 70, 1) 5%, rgba(119, 119, 119, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#181c46", endColorstr="#777777", GradientType=1);
     height: 100vh;
     width: 100%;
     display: flex;
@@ -43,7 +47,11 @@
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    background: white;
+    background: rgb(57, 58, 70);
+    background: -moz-linear-gradient(180deg, rgba(57, 58, 70, 1) 0%, rgba(67, 76, 149, 1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(57, 58, 70, 1) 0%, rgba(67, 76, 149, 1) 100%);
+    background: linear-gradient(180deg, rgba(57, 58, 70, 1) 0%, rgba(67, 76, 149, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#393a46", endColorstr="#434c95", GradientType=1);
     padding: 10px 20px;
     gap: 20px;
     width: 75%;
@@ -67,13 +75,14 @@
 }
 
 .wrapper--tasks {
-    overflow-y: scroll;
+    overflow-y: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     gap: 20px;
+    padding-right: 20px;
 }
 
 .container--input__task {
@@ -113,7 +122,10 @@
     flex-direction: row;
     padding-left: 10px;
     width: 100%;
-    border: 1px solid black;
+    border: 2px solid white;
+    background: white;
+    color: black;
+    font-weight: 500;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -126,38 +138,13 @@
     user-select: none;
 }
 
-.buttons--modificateTask {
+.button--modificateTask {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
     margin-left: 15px;
     height: 60px;
-}
-
-.button--editTask {
-    height: 100%;
-    padding-left: 40px;
-    padding-right: 40px;
-    border: none;
-    border-left: 1px solid rgb(0, 0, 0);
-    background-color: rgb(223, 223, 223);
-    font-weight: 500;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    transition: all .5s;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -ms-transition: all .5s;
-    -o-transition: all .5s;
-    cursor: pointer;
-    user-select: none;
-}
-
-.button--editTask:hover {
-    background: rgb(57, 66, 149);
-    background: linear-gradient(0deg, rgba(57, 66, 149, 1) 0%, rgba(96, 101, 242, 1) 100%);
-    color: white;
 }
 
 .button--deleteTask {
@@ -191,11 +178,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
+    color: white;
 }
 
 .clean--tasks {
     padding: 10px 15px;
-    background: #9abdff;
+    background: #ff9d9d;
     border-radius: 5px;
     border: none;
     font-weight: 500;
@@ -208,5 +197,5 @@
 }
 
 .clean--tasks:hover {
-    background: #6b9fff;
+    background: #f65d5d;
 }

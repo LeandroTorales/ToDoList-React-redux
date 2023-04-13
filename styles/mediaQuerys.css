@@ -12,20 +12,8 @@
         font-size: 11px;
     }
 
-    .buttons--modificateTask {
+    .button--modificateTask {
         margin-left: 5px;
-    }
-
-    .button--editTask {
-        padding-left: 5px;
-        font-size: 12px;
-        padding-right: 5px;
-    }
-
-    .button--deleteTask {
-        padding-left: 5px;
-        padding-right: 5px;
-        font-size: 19px;
     }
 
     #form>input {
