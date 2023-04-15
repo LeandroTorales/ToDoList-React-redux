@@ -1,0 +1,12 @@
+#input--putTask {
+    padding: 15px 15px;
+    font-size: 1.3rem;
+    width: 90%;
+}
+
+@media (max-width:768px) {
+    #form>input {
+
+        font-size: 12px;
+    }
+}

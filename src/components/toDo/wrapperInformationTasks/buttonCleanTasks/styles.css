@@ -1,0 +1,19 @@
+.clean--tasks {
+    padding: 10px 15px;
+    background: #ff9d9d;
+    border-radius: 5px;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    color: black;
+    user-select: none;
+}
+
+.clean--tasks:hover {
+    background: #f65d5d;
+}

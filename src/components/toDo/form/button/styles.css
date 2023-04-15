@@ -1,0 +1,11 @@
+.add--task {
+    cursor: pointer;
+    padding: 15px 15px;
+    font-size: 1.3rem;
+}
+
+@media (max-width:768px) {
+    .add--task {
+        font-size: 12px;
+    }
+}

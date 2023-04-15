@@ -1,0 +1,11 @@
+.wrapper--tasks {
+    overflow-y: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    padding-right: 20px;
+    flex-wrap: wrap;
+}

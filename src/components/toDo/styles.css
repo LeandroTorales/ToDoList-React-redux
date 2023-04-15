@@ -1,0 +1,13 @@
+.container--main__toDo {
+    background: rgb(24, 28, 70);
+    background: -moz-linear-gradient(0deg, rgba(24, 28, 70, 1) 5%, rgba(119, 119, 119, 1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(24, 28, 70, 1) 5%, rgba(119, 119, 119, 1) 100%);
+    background: linear-gradient(0deg, rgba(24, 28, 70, 1) 5%, rgba(119, 119, 119, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#181c46", endColorstr="#777777", GradientType=1);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
